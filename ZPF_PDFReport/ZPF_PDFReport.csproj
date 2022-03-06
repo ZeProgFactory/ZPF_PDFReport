@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+      <Version>1.0.0.1</Version>
+      <Authors>ME</Authors>
+      <Company>ZeProgFactory</Company>
+      <Description>XFINIUM.PDF wrapper</Description>
+      <Copyright>ZeProgFactory</Copyright>
+      <PackageProjectUrl>https://github.com/ZeProgFactory/ZPF_PDFReport</PackageProjectUrl>
+      <PackageIcon>ZeProgramFactory.Square.BG.png</PackageIcon>
+      <RepositoryUrl>https://github.com/ZeProgFactory/ZPF_PDFReport</RepositoryUrl>
+   </PropertyGroup>
+
+   <ItemGroup>
+     <None Include="..\..\ZPF_Barcodes\ZeProgramFactory.Square.BG.png">
+       <Pack>True</Pack>
+       <PackagePath>\</PackagePath>
+     </None>
+   </ItemGroup>
+
+   <ItemGroup>
+     <PackageReference Include="ZPF_Basics" Version="2.0.0.30" />
+   </ItemGroup>
+
+   <ItemGroup>
+      <Reference Include="Syncfusion.Compression.Portable">
+         <HintPath>..\DLLs\Syncfusion.Compression.Portable.dll</HintPath>
+      </Reference>
+      <Reference Include="Syncfusion.XlsIO.Portable">
+         <HintPath>..\DLLs\Syncfusion.XlsIO.Portable.dll</HintPath>
+      </Reference>
+      <Reference Include="Xfinium.Pdf.Xamarin.Android">
+         <HintPath>..\DLLs\Xfinium.Pdf.Xamarin.Android.dll</HintPath>
+      </Reference>
+   </ItemGroup>
+
+</Project>
