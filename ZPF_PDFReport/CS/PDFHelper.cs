@@ -28,8 +28,8 @@ namespace ZPF.PDF
         //PdfStandardFont helveticaBold = new PdfStandardFont(PdfStandardFontFace.HelveticaBold, 16);
 
         //static PdfColor color = new PdfRgbColor(0, 0, 0);
-        Color cBlack = Colors.Black;
-        Color cLightGray = Colors.LightGray;
+        ZPF.Graphics.Color cBlack = ZPF.Graphics.Colors.Black;
+        ZPF.Graphics.Color cLightGray = ZPF.Graphics.Colors.LightGray;
 
         public double poil { get; } = 0.1;
 
@@ -623,7 +623,7 @@ namespace ZPF.PDF
 
         // - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  -
 
-        public double DrawRectangle(Color color, double y, double height, bool isFooter = false)
+        public double DrawRectangle(ZPF.Graphics.Color color, double y, double height, bool isFooter = false)
         {
             //width = CheckBorderX(X, width);
             //height = CheckBorderY(Y, height);

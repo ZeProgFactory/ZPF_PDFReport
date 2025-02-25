@@ -90,14 +90,14 @@ namespace ZPF.PDF
       public TFont SubTitleFont { get; set; } = new TFont { FontSize = 18 };
 
       public TFont PageDecorationsFont { get; set; } = new TFont { FontSize = 10 };
-      public Color PageDecorationsLineColor { get; set; } = Colors.Black;
+      public ZPF.Graphics.Color PageDecorationsLineColor { get; set; } = ZPF.Graphics.Colors.Black;
       public double PageDecorationsLineWidth { get; set; } = 0.02;
-      public Color PageDecorationsBackgroundColor { get; set; } = Color.Parse("0FFF");
+      public ZPF.Graphics.Color PageDecorationsBackgroundColor { get; set; } = ZPF.Graphics.Color.Parse("0FFF");
 
       public TFont HeaderFont { get; set; } = new TFont { FontSize = 10, Bold = true };
 
       public TFont DataRowFont { get; set; } = new TFont { FontSize = 10 };
-      public Color DataRow2ndColor { get; set; } = Colors.Lavender;
+      public ZPF.Graphics.Color DataRow2ndColor { get; set; } = ZPF.Graphics.Colors.Lavender;
    }
 
    // - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  -
@@ -105,7 +105,7 @@ namespace ZPF.PDF
    public class TFont
    {
       public double FontSize { get; set; } = 10;
-      public Color ForeGround { get; set; } = Colors.Black;
+      public ZPF.Graphics.Color ForeGround { get; set; } = ZPF.Graphics.Colors.Black;
 
       public bool Bold { get; set; } = false;
       public bool Italic { get; set; } = false;

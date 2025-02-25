@@ -162,7 +162,7 @@ namespace ZPF.PDF
 
         // - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  -
 
-        void DrawLine(Color color, PdfPoint begin, PdfPoint end, double width = 0.02, bool isFooter = false)
+        void DrawLine(ZPF.Graphics.Color color, PdfPoint begin, PdfPoint end, double width = 0.02, bool isFooter = false)
         {
             PdfPen pen = new PdfPen();
 
@@ -178,7 +178,7 @@ namespace ZPF.PDF
 
         // - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  -
 
-        void DrawBox(Color color, double X, double Y, double width, double height, bool isFooter = false)
+        void DrawBox(ZPF.Graphics.Color color, double X, double Y, double width, double height, bool isFooter = false)
         {
             width = CheckBorderX(X, width);
             height = CheckBorderY(Y, height, isFooter);
@@ -194,7 +194,7 @@ namespace ZPF.PDF
 
         // - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  - -  -
 
-        public void DrawRectangle(Color color, double X, double Y, double width, double height, bool isFooter = false)
+        public void DrawRectangle(ZPF.Graphics.Color color, double X, double Y, double width, double height, bool isFooter = false)
         {
             width = CheckBorderX(X, width);
             height = CheckBorderY(Y, height, isFooter);
